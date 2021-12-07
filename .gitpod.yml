@@ -1,6 +1,4 @@
-image: 
-    - ncbi/blast
-    - snakemake/snakemake-tutorial:stable
+image: ncbi/blast
 
 tasks:
     - init: pip install pandas
