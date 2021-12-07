@@ -1,1 +1,2 @@
 image: ncbi/blast
+image: snakemake/snakemake-tutorial:stable
