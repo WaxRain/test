@@ -1,0 +1,9 @@
+h1 {font-size: 16px;}
+#menu {width: 90%; height: 126px; }
+ul, li {padding: 0%; margin: 0%; list-style: none;}
+ul {float: right; margin-right: 0%; margin-top: 55px; width: 700px; font-size: 12px;}
+li {float: left; width: 36px; padding: 0 0 4px 0; text-align: center; }
+li:nth-child(3n+1) {font-weight: bold; background: none;}
+li:nth-child(20) {font-size: 10px;}
+li:nth-child(22n+1) {margin-left: -1px;}
+li:nth-child(22) {color: red;}
