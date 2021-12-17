@@ -1,5 +1,0 @@
-image: ncbi/blast
-
-tasks:
-    - init: python3 -m pip install pandas
-    
