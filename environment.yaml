@@ -1,0 +1,15 @@
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - snakemake-minimal >=6.12
+  - jinja2
+  - matplotlib
+  - bcftools =1.14
+  - samtools =1.14
+  - bwa =0.7.17
+  - pysam =0.17
+  - R
+  - ggplot2
+  - Annovar
+  - GATK
