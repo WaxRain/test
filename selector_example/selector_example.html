@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
+    <title>CSS3伪类选择器实例</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>利用伪类选择器生成个性列表导航栏</h1>
+        <ul>
+            <li>新闻</li><li>军事</li><li>社会</li>  <li>娱乐</li><li>音乐</li><li>电影</li>
+            <li>科技</li><li>手机</li><li>数码</li>  <li>财经</li><li>股票</li><li>基金</li>
+            <li>体育</li><li>中超</li><li>NBA</li>  <li>汽车</li><li>图库</li><li>车型</li>
+        </ul>
+    </div>
+
+    <hr>
+    <div id="table">
+        <h1>利用伪选择器装饰表格</h1>
+        <table>
+            <caption>2021年12月编程语言排行榜</caption>
+            <thead></thead>
+            <tr>
+                <th>排名</th><th>编程语言</th><th>流行度</th><th>年度明星语言</th>
+            </tr>
+            <tr>
+                <td>1</td><td>Python</td><td>12.90%</td><td>2007, 2018, 2020</td>
+            </tr>
+            <tr>
+                <td>2</td><td>C</td><td>11.80%</td><td>2017, 2008, 2019</td>
+            </tr>
+            <tr>
+                <td>3</td><td>Java</td><td>10.12%</td><td>2015, 2005</td>
+            </tr>
+            <tr>
+                <td>4</td><td>C++</td><td>7.73%</td><td>2003</td>
+            </tr>
+            <tr>
+                <td>5</td><td>C#</td><td>6.40%</td><td></td>
+            </tr>
+            <tr>
+                <td>6</td><td>Visual Basic</td><td>5.40%</td><td></td>
+            </tr>
+            <tr>
+                <td>7</td><td>JavaScript</td><td>2.30%</td><td>2014</td>
+            </tr>
+            <tr>
+                <td>8</td><td>Assembly language</td><td>2.25%</td><td></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="element_selector">
+        <h1>利用元素选择器给不同类型链接添加图标</h1>
+        <p><a href="http://www.baidu.com/name.pdf">PDF文件</a></p>
+        <p><a href="http://www.baidu.com/name.ppt">PPT文件</a></p>
+        <p><a href="http://www.baidu.com/name.xls">XLS文件</a></p>
+        <p><a href="http://www.baidu.com/name.gif">GIF文件</a></p>
+        <p><a href="http://www.baidu.com/name.png">PNG文件</a></p>
+    </div>
+
+    <hr>
+    <div id="login_form">
+        <fieldset>
+            <legend>用户登录</legend>
+            <form action="" method="post" class="form">
+                <label for="name">姓名
+                    <input type="text" name="name" id="name" value="">
+                </label>
+                <label for="password">密码
+                    <input type="text" name="password" id="password" value="" disabled="disabled">
+                </label>
+                <input type="button" value="登录">
+            </form>
+        </fieldset>
+    </div>
+    <hr>
+</body>
+</html>

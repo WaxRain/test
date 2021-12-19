@@ -1,0 +1,146 @@
+/* 对于不支持HTML5中一些新元素的浏览器，追加一下生命以通知浏览器对以下元素以块方式显示 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
+
+/* 网页背景 */
+html {background-color: black; }
+
+
+/* 伪选择器写列表导航样式 */
+#menu {background-color:aliceblue; width: 90%; height: 96px;}
+ul, li {list-style: none;}  /* 取消列表呈现样式 */
+ul {float: right; margin-right: 20%; margin-top: 26px; width: 330px; font-size: 12px;} /* 区域宽度决定分几行 */
+li {float: left; width: 36px; padding: 0 0 4px 0; text-align: center; }
+li:nth-child(3n+1) {font-weight: bold; background: none;} /* 1, 4, 7, ...加粗 */
+li:nth-child(8) {font-size: 10px;}  /* 第8个元素缩小 */
+li:nth-child(9n+1) {margin-left: -1px;} /* 每行第一个元素微调 */
+li:nth-child(14) {color: red;} /* 第14个元素红色强调 */
+
+
+/* 伪选择器写表格样式 */
+#table {background-color: #fff}
+table {
+    width: 70%;
+    font-size: 16px;
+    empty-cells: show;
+    margin: 10px auto;
+    border: 1px solid #cad9ea;
+    color: #666;
+    border-collapse: separate;
+    table-layout: fixed;
+}
+caption{font-size: 24px; margin-bottom: 6px;}
+tr:hover, td:hover {background: #FF9;}  /* 鼠标悬停 */
+th {height: 30px; overflow: hidden;}
+td {height: 25px;}
+td, th {
+    border: 1px solid #cad9ea; 
+    padding: 0 1em 0;
+    cursor: pointer; /* 手形鼠标光标 */
+}
+tr:nth-child(even) {background-color: #f5fafe;}
+td:only-of-type{ /* tr下只有一个td时 */
+    background: #eee url(images/icon8_1.png) 12px 50%;
+}
+
+
+
+/* 利用元素选择器为不同类型超链接添加图标 */
+#element_selector {
+    background-color: darkgrey;
+}
+#element_selector > p {
+    margin: 10px;
+}
+a[href^="http:"]{ /* 匹配所有有效超链接 */
+    background: url(images/http_icon.png) no-repeat left center;
+    padding-left: 180px;
+}
+a[href$="pdf"] {/* 匹配链接到PDF文件的所有超链接 */
+    background: url(images/pdf_icon_1.png) no-repeat left center;
+    padding-left: 18px;
+}
+a[href$="ppt"] {
+    background: url(images/ppt_icon_1.png) no-repeat left center;
+    padding-left: 18px;
+}
+a[href$="xls"] {
+    background: url(images/xls_icon_1.png) no-repeat left center;
+    padding-left: 18px;
+}
+a[href$="gif"] {
+    background: url(images/gif_icon_1.png) no-repeat left center;
+    padding-left: 18px;
+}
+a[href$="png"] {
+    background: url(images/icon8_1.png) no-repeat left center;
+    padding-left: 18px;
+}
+
+
+/* 利用UI伪类选择器表单样式 */
+#login_form {
+    background-color: aliceblue;
+}
+fieldset{
+    border: 2px solid red;
+    width: 500px;
+    padding: 0em 2em 1em 2em;
+}
+legend { /* 与fieldset配套使用 */
+    line-height: 40px;
+    padding: 0 26px;
+    animation: marginMove 2s infinite linear alternate ;
+}
+@keyframes marginMove{
+    100% {margin-left: 300px;}
+}
+label {
+    line-height: 30px ;
+    display: block;
+    font-weight: bold;
+}
+#name, #password {
+    border: 1px solid #ccc;
+    width: 160px;
+    height: 26px;
+    padding-left: 20px;
+    line-height: 20px;
+    margin: 6px 0;
+}
+#name, #password {
+    background: url(images/icon8_1.png) no-repeat 2px 2px;
+}
+#login_form input:disabled {
+    background: #ddd url(images/pdf_icon_1.png) no-repeat 2px 2px;
+    border: 1px solid #fff;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
