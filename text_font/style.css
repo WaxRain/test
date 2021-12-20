@@ -1,0 +1,65 @@
+/* 对于不支持HTML5中一些新元素的浏览器，追加一下生命以通知浏览器对以下元素以块方式显示 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, summary, time, mark, audio, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+    display: block;
+}
+
+html {background: black;}
+h1 {color: #fff; font-size: 36px;}
+p {
+    background: white;
+    text-align: center;
+    font: bold 48px helvetica, arial, sans-serif;
+    color: #999;
+}
+#shadow1 {text-shadow: 0.05em 0.1em #333; /* 水平位移（正为右），垂直位移（正为下），模糊半径（可选），阴影颜色（可选）*/}
+#shadow2 {text-shadow: -0.1em 0.1em #333;}
+#shadow3 {text-shadow: -0.1em -0.1em #333;}
+#shadow4 {text-shadow: 0.1em 0.1em 0.2em black;} /* 模糊效果 */
+#shadow5 {text-shadow: 0.1em 0.1em 0.3em #333;} /* 模糊效果 */
+
+#example1 { 
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.2em #333;
+}
+#example2 {
+    line-height: 100px;
+    color: red;
+    text-shadow: 0.2em 0.5em 0.1em #600, 
+                -0.3em 0.1em 0.1em #060, 
+                0.4em -0.3em 0.1em #006;
+}
+.word_effect {
+    padding: 24px;
+    margin: 4px;
+    color: #d1d1d1;
+    background: #ccc;
+    font-weight: bold;
+}
+#example3 { text-shadow: -1px -1px white, 1px 1px #333; }
+#example4 { text-shadow: -1px -1px #333, 1px 1px white; }
+#example5 { text-shadow: -1px 0 black, 1px 0 black, 0 1px black, 0 -1px black;}
+#example6 {text-shadow: 0 0 0.2em #F87, 0 0 0.2em #f87;}
+#fire_effect {
+    line-height: 100px;
+    background: #000;
+    color: red;
+    text-shadow: 0 0 4px white, 
+                0 -5px 4px #ff3,
+                2px -10px 6px #fd3,
+                -2px -15px 11px #f80,
+                -2px -25px 18px #f20;
+}
